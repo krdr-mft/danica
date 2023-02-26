@@ -1,0 +1,56 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "files": [
+    "src/empty.ts",    
+    "src/polyfills.ts"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "stream": [ "./node_modules/stream-browserify" ],
+      "util": [ "./node_modules/stream-browserify" ],
+      "crypto": [ "./node_modules/crypto-browserify"],
+      "path": [ "./node_modules/path-browserify"],
+      "os": [ "./node_modules/os-browserify"],
+      "https": [ "./node_modules/https-browserify"],
+      "zlib": [ "./node_modules/browserify-zlib"],
+      "assert": [ "./node_modules/assert"],
+      "url": [ "./node_modules/url"],
+      "http": [ "./node_modules/stream-http"],
+      "buffer": [ "./node_modules/buffer"],
+      "tls": ["src/empty.ts"],
+      "http2": ["./node_modules/http2"],
+      "dns": ["src/empty.ts"],
+      "fs": ["src/empty.ts"],
+      "net": ["src/empty.ts"]
+    },
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": [
+      "ES2022",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
